@@ -2,12 +2,14 @@
 {% load static %}
 {% block content %}
 
+<body class="bg-light">
 <main>
-    <section id="room-name-wrapper">
-        <p>Room Name: <span id="room-name"></span></p>
+    <section id="room-name-wrapper" class="d-flex justify-content-between bg-info-subtle">
+        <img src="{% static 'images/logo.png' %}" id="logo-invideo" alt="">
+        <p ><b><span id="room-name"></span></b></p>
     </section>
 
-    <section id="video-streams">
+    <section id="video-streams" class="shadow-sm">
 
 
     </section>
@@ -28,6 +30,7 @@
 
     </section>
 </main>
+</body>
 
 <script type="text/javascript" src="{% static 'assets/AgoraRTC_N-4.14.1.js' %}"></script>
 <script type="text/javascript" src="{% static 'js/streams.js' %}"></script>
